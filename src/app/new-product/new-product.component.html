@@ -1,0 +1,27 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <div class="col-md-6">
+        <form (ngSubmit)="save()">
+          <div class="mb-3">
+            <label class="form-label">Id</label>
+            <input class="form-control" [(ngModel)]="item.id">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input class="form-control" [(ngModel)]="item.name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Price</label>
+            <input class="form-control" [(ngModel)]="item.price">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Checked</label>
+            <input type="checkbox" class="form-check-input" [(ngModel)]="item.checked" [ngModelOptions]="{standalone: true}">
+          </div>
+          <button class="btn btn-outline-danger" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
